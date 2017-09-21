@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="DpDisp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DpDisp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.BottomAppBar>
+        <CommandBar ClosedDisplayMode="Compact">
+            <AppBarToggleButton Icon="Play" Label="接続" Click="AppBarConnect_Click" x:Name="btnConnect" />
+            <AppBarButton Icon="Save" Label="保存" Click="AppBarSave_Click" />
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="image1" Margin="10"
+                Stretch="Uniform" />
+
+    </Grid>
+</Page>
