@@ -1,0 +1,6 @@
+inspecode:
+  astyle: auto-fix
+  misspell: auto-fix
+  cpd: default
+  uncrustify: auto-fix
+  jscpd: default
